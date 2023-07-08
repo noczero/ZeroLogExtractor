@@ -1,0 +1,30 @@
+[project]
+name = "ZeroLogExtractor"
+version = "0.0.1"
+description = "Extract some information from Nginx based style log."
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = ["log", "nginx", "activity"]
+authors = [
+    { name = "Satrya BUdi Pratama", email = "satrya@zeroinside.id" }
+]
+maintainers = [
+    { name = "Satrya Budi Pratama", email = "satrya@zeroinside.id" }
+]
+classifiers = [
+    "Development Status :: Release",
+    "Programming Language :: Python"
+]
+
+dependencies = [
+    "argparse",
+    "json",
+    "datetime",
+    "requests",
+    "csv",
+]
+
+# dynamic = ["version", "description"]
+
+[project.urls]
+Repository = "hhttps://github.com/noczero/ZeroLogExtractor.git"
