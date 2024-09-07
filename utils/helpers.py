@@ -24,12 +24,12 @@ def get_ip_location(ip_address: str) -> dict:
     if ip_location:
         return ip_location
 
-    response = requests.get(f"https://ipapi.co/{ip_address}/json")
+    response = requests.get(f"https://api.techniknews.net/ipgeo/{ip_address}")
     if response.status_code == 200:
         ip_records[ip_address] = response.json()
         return ip_records[ip_address]
     else:
-        ip_records[ip_address] = response.json()
+        ip_records[ip_address] = response.text
         return {}
 
 

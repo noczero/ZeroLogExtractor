@@ -30,7 +30,7 @@ if __name__ == "__main__":
         if client_ip_address != '':
             location_data = get_ip_location(client_ip_address)
             city = location_data.get("city", '')
-            isp = location_data.get("org", '')
+            isp = location_data.get("isp", '')
 
         if type(log.get("time")) == int:
             local_time = convert_unix_time_to_local_time(log.get("time", None))
